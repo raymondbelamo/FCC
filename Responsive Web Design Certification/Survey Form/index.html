@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ALPHA ATHLETICS | SURVEY FORM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">ALPHA ATHLETICS</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">SUPPLEMENTS</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      PRODUCTS
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+      <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">ALPHA ATHLETICS SURVEY FORM</h1>
+          <p id="description" class="description text-center">
+            PLEASE FILL OUT THE SURVEY FORM TO KNOW THE BEST PROGRAM FOR YOU
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">NAME</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="PLEASE ENTER YOUR NAME..."
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">EMAIL</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="PLEASE ENTER A VALID EMAIL..."
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >AGE<span class="clue">(OPTIONAL)</span></label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="PLEASE ENTER YOUR AGE..."
+            />
+          </div>
+          <div class="form-group">
+            <p>WHAT IS YOUR GENDER?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>GENDER</option>
+              <option value="male">MALE</option>
+              <option value="female">FEMALE</option>
+              <option value="preferNo">OTHER</option>
+              <option value="other">PREFER NOT TO SAY</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="height">HEIGHT</label>
+            <input
+              type="number"
+              name="height"
+              id="number"
+              class="form-control"
+              placeholder="PLEASE ENTER YOUR HEIGHT IN CM..."
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="weight">WEIGHT</label>
+            <input
+              type="number"
+              name="weight"
+              id="number"
+              class="form-control"
+              placeholder="PLEASE ENTER YOUR WEIGHT IN KG..."
+              required
+            />
+          </div>
+          <div class="form-group">
+            <p>HOW ACTIVE ARE YOU?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>SELECT OPTION</option>
+              <option value="light">LIGHTLY ACTIVE</option>
+              <option value="moderate">MODERATELY ACTIVE</option>
+              <option value="active">VERY ACTIVE</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>WHICH BEST DESCRIBES YOU?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>SELECT OPTION</option>
+              <option value="bulk">I WANT TO BULK</option>
+              <option value="shred">I WANT TO SHRED</option>
+              <option value="Maintain">I WANT TO MAINTAIN</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>HOW ACTIVE ARE YOU?</p>
+            <label>
+              <input
+                name="user-activity"
+                value="lightly"
+                type="radio"
+                class="input-radio"
+                checked
+              />LIGHTLY ACTIVE</label
+            >
+            <label>
+              <input
+                name="user-activity"
+                value="moderate"
+                type="radio"
+                class="input-radio"
+                checked
+              />MODERATELY ACTIVE</label
+            >
+            <label>
+              <input
+                name="user-activity"
+                value="active"
+                type="radio"
+                class="input-radio"
+                checked
+              />VERY ACTIVE</label
+            >
+          </div>
+
+
+          <div class="form-group">
+            <p>
+              WHAT WORKOUT TYPE DO YOU PREFER?
+              <span class="clue">(CHECK ALL THAT APPLIES)</span>
+            </p>
+
+            <label
+              ><input
+                name="prefer"
+                value="front-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+              />CALISTHENICS</label
+            >
+            <label>
+              <input
+                name="prefer"
+                value="back-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+              />WEIGHT WORKOUT</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="data-visualization"
+                type="checkbox"
+                class="input-checkbox"
+              />CARDIO</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="challenges"
+                type="checkbox"
+                class="input-checkbox"
+              />CYCLING</label
+            >
+
+          <div class="form-group">
+            <p>OTHERS? LIST THEM HERE...</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="ENTER ANY OTHER PREFERENCES..."
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+  </body>
+</html>
