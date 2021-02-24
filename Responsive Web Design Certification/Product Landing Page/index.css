@@ -55,9 +55,9 @@ header {
   top: 0;
   width: 100vw;
   min-height: 75px;
-  padding: 0px 20px;
+  /* padding: 0px 20px; */
   display: flex;
-  justify-content: space-around;
+  /* justify-content: ; */
   align-items: center;
   background-color: rgb(255, 255, 255);
 }
@@ -73,7 +73,9 @@ header {
   color: #ddd;
   width: 25vw;
   height: 100%;
-  padding: 28px 10px;
+  padding: 28px 90px;
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 650px) {
@@ -87,12 +89,7 @@ header {
 .logo > img {
   max-width: 82px;
   height: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  margin-left: 20px;
 }
 
 @media (max-width: 650px) {
@@ -131,6 +128,15 @@ nav > ul {
   nav > ul {
     flex-direction: column;
   }
+}
+
+.shop-img {
+  margin-top: 15px;
+  width: 100vw;
+}
+
+.shop-img img {
+  max-width: 100%;
 }
 
 #hero {
@@ -218,14 +224,19 @@ nav > ul {
 }
 
 #how-it-works {
-  margin-top: 50px;
+  margin: 50px 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 #how-it-works > iframe {
+  margin: 10px 0 0 20px;
   max-width: 560px;
   width: 100%;
+}
+
+#how-it-works img {
+  max-width: 90%;
 }
 
 #pricing {
@@ -236,47 +247,45 @@ nav > ul {
 }
 
 .product {
+  background: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   width: calc(100% / 3);
   margin: 10px;
-  border: 1px solid #000;
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 3px;
 }
 
-.product > .level {
-  background-color: #ddd;
-  color: black;
-  padding: 15px 0;
+.product img {
+  max-width: 90%;
+  margin-top: 10px;
+}
+
+.product .price,
+.discounted {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
   text-transform: uppercase;
-  font-weight: 700;
 }
 
-.product > h2 {
-  margin-top: 15px;
+.product .price h2 {
+  font-size: 18px;
+  font-weight: 900;
 }
 
-.product > ol {
-  margin: 15px 0;
+.product .price p,
+.discounted p {
+  color: #2d89fa;
 }
 
-.product > ol > li {
-  padding: 5px 0;
-}
-
-.product > button {
-  border: 0;
-  margin: 15px 0;
-  background-color: #f1c40f;
-  font-weight: 400;
-}
-
-.product > button:hover {
-  background-color: orange;
-  transition: background-color 1s;
+.product .discounted h2 {
+  font-size: 15px;
+  font-weight: 800;
+  color: #818181;
 }
 
 @media (max-width: 800px) {
